@@ -1,13 +1,10 @@
 # Panasonic JD-700M #
 
-This repository contains notes and test applications I am using to fix a Panasonic JD-700M
+This repository contains notes and test applications I used to fix a Panasonic JD-700M
 
-### What's Wrong with the System ###
-the system has a fault in the RAS and CAS lines. One or more of them are stuck and the system is only able to access a small portion of memory.
+## logic_board ##
+This folder contains a PCB to adapt the video output from the Panasonic to composite.
+The previous owner had hacked this on, no doubt it could be done better.
 
-A certain region of memory keeps repeating itself about 12 times.
-
-### What needs to be done ###
-The fix should be relatively simple, I need to identify the fault in the address decoding logic and replace the the faulty components.
-
-One way to do this is to simply replace every chip, another is to write some assembly to exercise specific portions of the memory and identify the faulty components.
+## logic_board ##
+Is some schematic specifically around the memory section.
